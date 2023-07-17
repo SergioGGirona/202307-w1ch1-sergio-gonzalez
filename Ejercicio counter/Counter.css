@@ -1,0 +1,147 @@
+body {
+    background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Paleta de colores
+    Fondo: #F2F2F2
+    Calculadora: #202026
+    Pantalla: #F2F2F2
+    letras: #D7F205
+    fondo botón +: #1CA16C
+        texto color calculadora
+    botones: #color de cada botón
+    fondo botón -: #FBA62C
+    fondo botón reset #969A9D
+    */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto';
+    letter-spacing: 20px;
+    color: #202026;
+    font-size: 50px;
+    text-decoration: overline;
+    padding-bottom: 30px;
+}
+h1:hover {
+    text-decoration: underline;
+
+}
+
+.calculator {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 70vh;
+    width: 70vw;
+    background-color: #202026;
+    border-radius: 40px;
+}
+
+.screen {
+    justify-content: center;
+    align-self: center;
+    height: 30vh;
+    width: 30vw;
+    background-color: #F2F2F2;
+    color: #202026;
+    font-size: 90px;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.pannel {
+    display: flex;
+}
+
+button {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    transition:
+        0.25s
+        cubic-bezier(0.3, -0.1, 0.4, 1.4);
+}
+
+button span {
+    position: absolute;
+    left: 0;
+    width: 70%;
+    line-height: inherit;
+    font-size: 25px;
+    transition:
+        0.25s
+        cubic-bezier(0.3, -0.1, 0.4, 1.4); 
+}
+
+button .reset {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    font-size: 25px;
+    transition:
+        0.25s
+        cubic-bezier(0.3, -0.1, 0.4, 1.4);
+}
+
+button:hover .reset {
+    width: 100%;
+}
+button:hover span {
+    left: -70%;
+    opacity: 0;
+    }
+button:hover {
+    opacity: 0.9;
+}
+
+button .add {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    font-size: 25px;
+    transition:
+        0.25s
+        cubic-bezier(0.3, -0.1, 0.4, 1.4);
+}
+
+button:hover .add {
+    width: 100%;
+}
+
+button .minus {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    font-size: 25px;
+    transition:
+        0.25s
+        cubic-bezier(0.3, -0.1, 0.4, 1.4);
+}
+
+button:hover .minus {
+    width: 100%;
+}
+
+.butadd {
+    background-color: #1CA16C;
+}
+
+.butmin {
+    background-color: #FBA62C;
+}
+.butres {
+    background-color: #969A9D;
+}

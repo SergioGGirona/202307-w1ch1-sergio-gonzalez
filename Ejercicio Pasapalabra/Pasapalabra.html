@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Belanosima:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Pasapalabra.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>PASALATRAMPA</title>
+
+</head>
+<body>
+    <div class="Roscontainer">
+        <div class="title">PASALATRAMPA</div>
+        <ul>
+            <li class="letter" id="a">A</li>
+            <li class="letter" id="b">B</li>
+            <li class="letter" id="c">C</li>
+            <li class="letter" id="d">D</li>
+            <li class="letter" id="e">E</li>
+            <li class="letter" id="f">F</li>
+            <li class="letter" id="g">G</li>
+            <li class="letter" id="h">H</li>
+            <li class="letter" id="i">I</li>
+            <li class="letter" id="j">J</li>
+            <li class="letter" id="k">K</li>
+            <li class="letter" id="l">L</li>
+            <li class="letter" id="m">M</li>
+            <li class="letter" id="n">N</li>
+            <li class="letter" id="ñ">Ñ</li>
+            <li class="letter" id="o">O</li>
+            <li class="letter" id="p">P</li>
+            <li class="letter" id="q">Q</li>
+            <li class="letter" id="r">R</li>
+            <li class="letter" id="s">S</li>
+            <li class="letter" id="t">T</li>
+            <li class="letter" id="u">U</li>
+            <li class="letter" id="v">V</li>
+            <li class="letter" id="w">W</li>
+            <li class="letter" id="x">X</li>
+            <li class="letter" id="y">Y</li>
+            <li class="letter" id="z">Z</li>
+        </ul>
+        <div class="score">
+            <div class="timer">200</div>
+            <div class="pointer">0</div>
+        </div>
+        
+    </div>
+    <div class="Gamecontainer">
+        <div class="welcome">
+            <h1>Welcome to the jungle!</h1>
+            <p>Ya tienes disponible el juego que desafiará tu pobre intelecto y tu escaso vocabulario. Olvídate de lianas y animales, la verdadera jungla está en las palabras. No nos culpes si fallas estrepitosamente.</p>
+            <p>Las normas son tan sencillas que incluso un chimpancé con un teclado puede jugar: te enseñaremos una definición y deberás responder con la palabra a la que corresponde, SIN TILDES, antes de que acabe el tiempo. Si quieres dejar la solución de una definición para más adelante, pasa de palabra.</p>
+            <p>En nuestra magnificiencia, te regalamos 30 segundos más y puedes utilizar la tecla ENTER para enviar la palabra y SPACE para pasar a la siguiente letra. ¿Te atreves o has venido para nada?</p>
+            <button class="startgame">¡Acepto el reto!</button>
+
+        </div>
+        <div class="questions">
+            <h2 class="titleHint"></span>
+            <p class="description"></p>
+            <input type="text" class="answer">
+            <button class="send">Enviar</button>
+            <button class="passtheword">Pasalatrampa</button>
+
+            <button class="endNow">Terminar juego</button>
+
+        </div>
+        <div class="endgame">
+            <h2>Esto se acaba aquí</h2>
+            <p>Has conseguido un total de 0 aciertos.</p>
+            <button>¿Otra oportunidad?</button>
+        </div>
+    </div>
+    <footer>
+        <p>Esto no es <s>PASAPALABRA</s>, no estamos financiados por ningún grupo mediático ni empresa, todavía. Si te ha gustado, apoya a nuestro creador: Sergio G. Girona. 💚</p>
+    </footer>
+    <script src="Pasapalabra.js" type="module"></script>
+
+</body>
+
+</html>

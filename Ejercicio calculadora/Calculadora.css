@@ -1,0 +1,91 @@
+* {
+    font-family: 'Amatic SC', sans-serif;
+    color: #F2F2F2;
+}
+h1 {
+    color:#F2F2F2;
+    text-align: center;
+    font-size: 9vh;
+    margin: 40px 20px 20px;
+    text-shadow: 2vh, 2vh, 5vh, black;
+}
+body {
+    margin: 0;
+    background: linear-gradient(to bottom right, #6B6560, #262626);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-columns: 160px, repeat(5, 75px);
+    background-color: #A68263;
+    padding: 15px;
+    box-shadow: 1px 1px 10px 1px black;
+    border-radius: 10px;
+}
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 6vh;
+    border: none;
+    background-color: #734D2C;
+}
+button:active {
+    background-color: #573a21; 
+    box-shadow: 0 5px #6B6560;
+    transform: translateY(3px);
+}
+.display {
+    height: 100px;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px 10px 20px;
+    background-color: #262626;
+    border-radius: 10px;
+    text-align: right;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 5px #6B6560;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.bigbut{
+    border-top-left-radius: 40%;
+    grid-column: span 2;
+}
+.operator{
+    background-color: #262626;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 40%;
+    font-size: 7vh;
+}
+.result{
+    background-color: #262626;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 40%;
+    font-size: 7vh;
+}
+.operator:active{
+    background-color: black;
+    transform: translateY(3px) rotate(-0.01turn);
+
+}
+.square {
+    font-size: 4vh;
+}
+.previousImput {
+    margin: 7px;
+    font-size: 4vh;
+}
+.actualImput{
+    margin: 7px;
+    font-size: 5vh;
+}  

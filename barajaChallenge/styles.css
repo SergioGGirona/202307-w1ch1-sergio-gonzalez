@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Grandiflora One", serif;
+}
+
+body {
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+.header {
+  font-size: 50px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  border: solid 1px black;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardsuit {
+  align-items: flex-start;
+  margin: 0;
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  font-size: 1.3em;
+}
+
+.down {
+  align-items: flex-end;
+}
+
+.number {
+  font-size: 100px;
+  margin: 0;
+}
+
+.response {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.button {
+  font-size: 20px;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  font-family: inherit;
+  padding-bottom: 2px;
+  margin: 5px;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  border-radius: 10px;
+  color: black;
+  border: solid 1px black;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.button:active {
+  border-radius: 15px;
+  color: black;
+  border: solid 1px black;
+  background-color: #cacaca;
+  transform: translate(0px, 5px);
+}
+
+.hidden {
+  display: none;
+}
+
+.no-visible {
+  visibility: hidden;
+}
+.start-button {
+  text-align: center;
+  justify-self: center;
+}

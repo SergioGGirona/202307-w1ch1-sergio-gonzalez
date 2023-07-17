@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suit Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="spades.svg" type="image/x-icon">
+  <script src="main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">¿Greater or Smaller?</header>
+  <main class="all-container">
+    <button class="start-button button">Start!</button>
+    <section class="game-container hidden">
+      <div class="cards-container">
+        <div class="card current">
+          <span class="cardsuit current-cardsuit">♦️</span>
+          <span class="number number-card">8</span>
+          <span class="cardsuit current-cardsuit down">♦️</span>
+        </div>
+        <div class="card">
+          <span class="cardsuit suitcard-to-guess no-visible">♦️</span>
+          <span class="number number-to-guess">?</span>
+          <span class="cardsuit suitcard-to-guess down no-visible">♦️</span>
+        </div>
+      </div>
+      <div class="interaction-container">
+        <h2 class="response no-visible">Looser!</h2>
+        <button class="greater button">↑ Greater ↑</button>
+        <button class="smaller button">↓ Smaller ↓</button>
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -74,10 +74,10 @@ const showCard2 = (randomCard) => {
   numbercardToGuess.textContent = randomCard[1].number;
 
   secondCardSuit.forEach((cardSuit) => cardSuit.classList.remove("no-visible"));
-  checkCardSmaller();
 };
 
 const checkCardSmaller = (randomCards) => {
+  debugger;
   if (randomCards[0].value < randomCards[1].value) {
     let resultCheck = "smaller";
     responseMessage.textContent = "You got it!";
@@ -126,7 +126,10 @@ const startSuitGame = () => {
   console.log(randomCards);
 
   showCard1(randomCards);
-  smallerButton.addEventListener("click", () => checkCardSmaller(randomCards));
+  smallerButton.addEventListener("click", () => {
+    debugger;
+    checkCardSmaller(randomCards);
+  });
   greaterButton.addEventListener("click", () => checkCardGreater(randomCards));
   resetGame();
 };

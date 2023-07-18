@@ -77,7 +77,6 @@ const showCard2 = (randomCard) => {
 };
 
 const checkCardSmaller = (randomCards) => {
-  debugger;
   if (randomCards[0].value < randomCards[1].value) {
     let resultCheck = "smaller";
     responseMessage.textContent = "You got it!";
@@ -127,7 +126,6 @@ const startSuitGame = () => {
 
   showCard1(randomCards);
   smallerButton.addEventListener("click", () => {
-    debugger;
     checkCardSmaller(randomCards);
   });
   greaterButton.addEventListener("click", () => checkCardGreater(randomCards));

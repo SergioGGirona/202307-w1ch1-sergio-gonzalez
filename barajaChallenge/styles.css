@@ -21,8 +21,12 @@ body {
   font-family: inherit;
   font-weight: bold;
   padding: 20px;
+  transition: all 0.3s ease-out;
 }
-
+.subtitle {
+  margin: 0px;
+  margin-bottom: 30px;
+}
 .cards-container {
   display: flex;
   flex-direction: row;

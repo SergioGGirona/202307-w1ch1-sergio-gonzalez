@@ -107,14 +107,13 @@ const checkCardGreater = (randomCards) => {
 };
 
 const resetGame = () => {
-  responseMessage.classList.add("no-visible");
-  const secondCardSuit = document.querySelectorAll(".suitcard-to-guess");
-  const numbercardToGuess = document.querySelector(".number-to-guess");
-  secondCardSuit.forEach((cardSuit) => cardSuit.classList.add("no-visible"));
-  numbercardToGuess.textContent = "?";
   setTimeout(() => {
-    randomCards = generateRandomCards();
-    showCard1(randomCards);
+    responseMessage.classList.add("no-visible");
+    const secondCardSuit = document.querySelectorAll(".suitcard-to-guess");
+    const numbercardToGuess = document.querySelector(".number-to-guess");
+    secondCardSuit.forEach((cardSuit) => cardSuit.classList.add("no-visible"));
+    numbercardToGuess.textContent = "?";
+    startSuitGame();
   }, 3000);
 };
 
@@ -127,9 +126,12 @@ const startSuitGame = () => {
   showCard1(randomCards);
   smallerButton.addEventListener("click", () => {
     checkCardSmaller(randomCards);
+    resetGame();
   });
-  greaterButton.addEventListener("click", () => checkCardGreater(randomCards));
-  resetGame();
+  greaterButton.addEventListener("click", () => {
+    checkCardGreater(randomCards);
+    resetGame();
+  });
 };
 
 startSuitGame();
